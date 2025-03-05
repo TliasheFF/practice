@@ -1,0 +1,11 @@
+.user-account-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-account {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

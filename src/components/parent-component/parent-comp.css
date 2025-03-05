@@ -1,0 +1,12 @@
+.parent-comp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.count {
+  font-size: 18px;
+  color: blue;
+}

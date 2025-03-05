@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.widgets {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.primary-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.primary-btn:active {
+  background-color: darkblue;
+}
+
+.secondary-btn {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.secondary-btn:active {
+  background-color: darkgray;
+}
+
+.danger-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.danger-btn:active {
+  background-color: darkred;
+}
