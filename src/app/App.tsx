@@ -3,6 +3,7 @@ import { ParentComp } from "../components/parent-component";
 import { Wrapper } from "../components/wrapper/wrapper";
 import { ButtonsFactory } from "../components/buttons-factory";
 import { UserAccountWithIncrement } from "../components/user-account";
+import { FilterableList } from "../components/filterable-list/filterable-list";
 import "./app.css";
 
 export function App() {
@@ -20,6 +21,10 @@ export function App() {
 
       <Wrapper>
         <ParentComp />
+      </Wrapper>
+
+      <Wrapper>
+        <FilterableList />
       </Wrapper>
     </div>
   );

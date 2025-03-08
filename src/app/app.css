@@ -8,11 +8,11 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   box-sizing: content-box;
 }
 
 .widgets {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 50px;
