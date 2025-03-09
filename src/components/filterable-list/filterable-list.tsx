@@ -11,7 +11,7 @@ interface Item {
 
 function BigList(props: BigListProps) {
   return (
-    <div style={{ paddingLeft: 15, height: 300, overflow: "auto" }}>
+    <div style={{ paddingLeft: 15, maxHeight: 300, overflow: "auto" }}>
       <ul>
         {props.items.map((item) => (
           <li key={item.id}>{item.text}</li>

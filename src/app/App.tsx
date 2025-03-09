@@ -4,6 +4,7 @@ import { Wrapper } from "../components/wrapper/wrapper";
 import { ButtonsFactory } from "../components/buttons-factory";
 import { UserAccountWithIncrement } from "../components/user-account";
 import { FilterableList } from "../components/filterable-list/filterable-list";
+import { Counter, TextInput } from "../components/generic-state";
 import "./app.css";
 
 export function App() {
@@ -25,6 +26,13 @@ export function App() {
 
       <Wrapper>
         <FilterableList />
+      </Wrapper>
+
+      <Wrapper>
+        <>
+          <Counter />
+          <TextInput />
+        </>
       </Wrapper>
     </div>
   );
