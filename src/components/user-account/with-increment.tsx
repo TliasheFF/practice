@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { UserAccount } from "./user-account";
 
-export function withIncrement(incrementAmount: number) {
+export function withIncrement(incrementAmount: number, Component: JSX.ElementType) {
   return () => {
     const [balance, setBalance] = useState<number>(0);
 
@@ -9,6 +8,6 @@ export function withIncrement(incrementAmount: number) {
       setBalance((prevBalance) => prevBalance + incrementAmount);
     };
 
-    return <UserAccount balance={balance} increaseBalance={handleIncreaseBalance} />;
+    return <Component balance={balance} increaseBalance={handleIncreaseBalance} />;
   };
 }
