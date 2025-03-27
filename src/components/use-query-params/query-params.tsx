@@ -4,7 +4,8 @@ import { useQueryParams } from "./use-query-params";
 
 export function QueryParams() {
   const { getQueryParam, setQueryParam } = useQueryParams<{ page: string; category: string }>();
-  const [queryParams, setQueryParams] = useState({
+
+  const [params, setParams] = useState({
     page: getQueryParam("page"),
     category: getQueryParam("category"),
   });
@@ -13,12 +14,12 @@ export function QueryParams() {
 
   return (
     <div>
-      <p>Page: {queryParams.page}</p>
-      <p>Category: {queryParams.category}</p>
+      <p>Page: {params.page}</p>
+      <p>Category: {params.category}</p>
       <Button
         onClick={() => {
           setQueryParam({ page: "1", category: "Books" });
-          setQueryParams({
+          setParams({
             page: getQueryParam("page"),
             category: getQueryParam("category"),
           });
