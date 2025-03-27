@@ -5,40 +5,42 @@ import { ButtonsFactory } from "../components/buttons-factory";
 import { UserAccountWithIncrement } from "../components/user-account";
 import { FilterableList } from "../components/filterable-list/filterable-list";
 import { Counter, TextInput } from "../components/generic-state";
-import "./app.css";
 import { QueryParams } from "../components/use-query-params";
+import { Search } from "../components/use-deferred-value";
+import "./app.css";
 
 export function App() {
   return (
-    <div className="widgets">
-      <Wrapper>
-        <QueryParams />
-      </Wrapper>
+    // <div className="widgets">
+    //    <Wrapper>
+    //     <QueryParams />
+    //   </Wrapper>
 
-      <Wrapper>
-        <ButtonsFactory />
-      </Wrapper>
+    //   <Wrapper>
+    //     <ButtonsFactory />
+    //   </Wrapper>
 
-      <Wrapper>
-        <UserAccountWithIncrement />
-      </Wrapper>
+    //   <Wrapper>
+    //     <UserAccountWithIncrement />
+    //   </Wrapper>
 
-      <FactorialCalculator />
+    //   <FactorialCalculator />
 
-      <Wrapper>
-        <ParentComp />
-      </Wrapper>
+    //   <Wrapper>
+    //     <ParentComp />
+    //   </Wrapper>
 
-      <Wrapper>
-        <FilterableList />
-      </Wrapper>
+    //   <Wrapper>
+    //     <FilterableList />
+    //   </Wrapper>
 
-      <Wrapper>
-        <>
-          <Counter />
-          <TextInput />
-        </>
-      </Wrapper>
-    </div>
+    //   <Wrapper>
+    //     <>
+    //       <Counter />
+    //       <TextInput />
+    //     </>
+    //   </Wrapper>
+    // </div>
+    <Search />
   );
 }
