@@ -11,36 +11,39 @@ import "./app.css";
 
 export function App() {
   return (
-    // <div className="widgets">
-    //    <Wrapper>
-    //     <QueryParams />
-    //   </Wrapper>
+    <div className="widgets">
+      <Wrapper>
+        <Search />
+      </Wrapper>
 
-    //   <Wrapper>
-    //     <ButtonsFactory />
-    //   </Wrapper>
+      <Wrapper>
+        <QueryParams />
+      </Wrapper>
 
-    //   <Wrapper>
-    //     <UserAccountWithIncrement />
-    //   </Wrapper>
+      <Wrapper>
+        <ButtonsFactory />
+      </Wrapper>
 
-    //   <FactorialCalculator />
+      <Wrapper>
+        <UserAccountWithIncrement />
+      </Wrapper>
 
-    //   <Wrapper>
-    //     <ParentComp />
-    //   </Wrapper>
+      <FactorialCalculator />
 
-    //   <Wrapper>
-    //     <FilterableList />
-    //   </Wrapper>
+      <Wrapper>
+        <ParentComp />
+      </Wrapper>
 
-    //   <Wrapper>
-    //     <>
-    //       <Counter />
-    //       <TextInput />
-    //     </>
-    //   </Wrapper>
-    // </div>
-    <Search />
+      <Wrapper>
+        <FilterableList />
+      </Wrapper>
+
+      <Wrapper>
+        <>
+          <Counter />
+          <TextInput />
+        </>
+      </Wrapper>
+    </div>
   );
 }

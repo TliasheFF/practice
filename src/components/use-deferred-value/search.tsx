@@ -7,7 +7,7 @@ export function Search() {
   const deferredQuery = useDeferredValue(query);
 
   return (
-    <div style={{ padding: 20, display: "flex", flexDirection: "column", gap: 10 }}>
+    <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
       <input placeholder="Enter text..." value={query} onChange={(e) => setQuery(e.target.value)} />
       <SearchResult query={deferredQuery} />
     </div>
