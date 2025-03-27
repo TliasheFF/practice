@@ -6,10 +6,15 @@ import { UserAccountWithIncrement } from "../components/user-account";
 import { FilterableList } from "../components/filterable-list/filterable-list";
 import { Counter, TextInput } from "../components/generic-state";
 import "./app.css";
+import { QueryParams } from "../components/use-query-params";
 
 export function App() {
   return (
     <div className="widgets">
+      <Wrapper>
+        <QueryParams />
+      </Wrapper>
+
       <Wrapper>
         <ButtonsFactory />
       </Wrapper>
